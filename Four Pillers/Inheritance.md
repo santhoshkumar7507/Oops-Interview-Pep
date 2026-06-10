@@ -1,26 +1,40 @@
-Interview Question
+# 🧬 Inheritance
 
-Q: What is Inheritance?
+> **Interview Question**: What is Inheritance?
+> 
+> **Answer**: Inheritance is an OOP concept where a child class inherits attributes and methods from a parent class. It promotes code reusability and establishes an 'is-a' relationship.
 
-<!-- Answer -->
+---
 
-Inheritance allows one class to acquire properties and methods of another class. It promotes code reusability and reduces duplication.
+## 📈 Advantages of Inheritance
 
-<!-- Problems  -->
+1. **Code Reusability**
+2. **Reduced Redundancy**
+3. **Easy Maintenance**
+4. **Better Extensibility**
 
+---
+
+## 💻 Real-World Example
+**Animal -> Dog**
+A Dog inherits common characteristics from the Animal class.
+
+---
+
+## 🐍 Python Example
+
+```python
 class Animal:
-
     def eat(self):
-        print("Eating")
-
+        print("Animal is Eating")
 
 class Dog(Animal):
-
     def bark(self):
-        print("Barking")
+        print("Dog is Barking")
 
+# Usage
+dog = Dog()
 
-d = Dog()
-
-d.eat()
-d.bark()
+dog.eat()
+dog.bark()
+```
